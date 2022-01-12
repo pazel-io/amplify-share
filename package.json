@@ -19,6 +19,7 @@
     "@angular/platform-browser": "^12.2.0",
     "@angular/platform-browser-dynamic": "^12.2.0",
     "@angular/router": "^12.2.0",
+    "@aws-amplify/api-graphql": "^2.2.19",
     "@nrwl/angular": "12.10.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
