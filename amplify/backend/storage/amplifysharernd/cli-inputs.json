@@ -1,0 +1,14 @@
+{
+  "resourceName": "amplifysharernd",
+  "policyUUID": "12e57033",
+  "bucketName": "amplifysharernd",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "S3Trigger5eb2813b",
+  "groupAccess": {}
+}

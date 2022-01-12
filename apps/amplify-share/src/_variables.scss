@@ -1,0 +1,64 @@
+@use '@angular/material' as mat;
+@import '@angular/material/theming';
+@import '~@aws-amplify/ui-angular/theme.css';
+
+$font: 'din-2014', sans-serif;
+
+$d4n-primary-palette: (
+ 50: #e8eaf6,
+ 100: #c5cae9,
+ 200: #9fa8da,
+ 300: #7986cb,
+ 500: #076371,
+ // ... continues to 900
+ contrast: (
+   50: rgba(black, 0.87),
+   100: rgba(black, 0.87),
+   200: rgba(black, 0.87),
+   300: white,
+   500: white,
+   // ... continues to 900
+ )
+);
+
+$d4n-accent-palette: (
+ 50: #e8eaf6,
+ 100: #c5cae9,
+ 200: #9fa8da,
+ 300: #7986cb,
+ 500: #D6E4A3,
+ // ... continues to 900
+ contrast: (
+   50: rgba(black, 0.87),
+   100: rgba(black, 0.87),
+   200: rgba(black, 0.87),
+   300: rgba(black, 0.87),
+   500: rgba(black, 0.87),
+   // ... continues to 900
+ )
+);
+
+$my-primary: mat.define-palette($d4n-primary-palette, 500);
+$my-accent: mat.define-palette($d4n-accent-palette, 500);
+
+$my-typography: mat.define-typography-config(
+  $font-family: $font,
+  $headline: mat.define-typography-level(1.5rem, 1, 400),
+  $subheading-2: mat.define-typography-level(1rem, 1.25, 400),
+  $button: mat.define-typography-level(1rem, 1.5, 400),
+  $input: mat.define-typography-level(1rem, 1.5, 400),
+  $body-1: mat.define-typography-level(1rem, 1.5, 400),
+  $body-2: mat.define-typography-level(14px, 1.5, 400),
+);
+
+$my-theme: mat.define-light-theme((
+  color: (
+    primary: $my-primary,
+    accent: $my-accent,
+  ),
+  typography: $my-typography,
+));
+
+$primary: mat-color(map-get($my-theme, 'primary'), 500);
+$accent: mat-color(map-get($my-theme, 'accent'), 500);
+$warn: mat-color(mat-palette($mat-red));

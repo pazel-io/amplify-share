@@ -328,7 +328,7 @@ export class APIService {
   }
   OnCreateTodoListener: Observable<
     SubscriptionResponse<Pick<__SubscriptionContainer, "onCreateTodo">>
-  > = API.graphql(
+    > = API.graphql(
     graphqlOperation(
       `subscription OnCreateTodo {
         onCreateTodo {
@@ -343,11 +343,11 @@ export class APIService {
     )
   ) as Observable<
     SubscriptionResponse<Pick<__SubscriptionContainer, "onCreateTodo">>
-  >;
+    >;
 
   OnUpdateTodoListener: Observable<
     SubscriptionResponse<Pick<__SubscriptionContainer, "onUpdateTodo">>
-  > = API.graphql(
+    > = API.graphql(
     graphqlOperation(
       `subscription OnUpdateTodo {
         onUpdateTodo {
@@ -362,11 +362,11 @@ export class APIService {
     )
   ) as Observable<
     SubscriptionResponse<Pick<__SubscriptionContainer, "onUpdateTodo">>
-  >;
+    >;
 
   OnDeleteTodoListener: Observable<
     SubscriptionResponse<Pick<__SubscriptionContainer, "onDeleteTodo">>
-  > = API.graphql(
+    > = API.graphql(
     graphqlOperation(
       `subscription OnDeleteTodo {
         onDeleteTodo {
@@ -381,5 +381,5 @@ export class APIService {
     )
   ) as Observable<
     SubscriptionResponse<Pick<__SubscriptionContainer, "onDeleteTodo">>
-  >;
+    >;
 }

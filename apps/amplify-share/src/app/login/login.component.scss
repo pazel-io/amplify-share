@@ -1,0 +1,40 @@
+@import '../../variables';
+
+:host {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../../assets/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(black, .6);
+  }
+}
+
+.login-page {
+  position: relative;
+  z-index: 1;
+}
+
+amplify-authenticator {
+  --container-height: auto;
+  --amplify-font-family: #{$font};
+  --amplify-primary-color: #{$primary};
+  --amplify-primary-shade: #{$primary};
+  --amplify-primary-tint: #{$primary};
+  --amplify-secondary-tint: #{$warn};
+  --amplify-text-sm: 1rem;
+}

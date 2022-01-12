@@ -1,1 +1,119 @@
 /* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@include mat.core();
+
+@import './variables';
+
+@include mat.core($my-typography);
+@include mat.all-component-themes($my-theme);
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: $font;
+  line-height: 1.4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.mat-typography {
+  > *:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.mat-form-field {
+  margin-bottom: 6px;
+  &-invalid {
+    margin-bottom: 24px;
+  }
+}
+
+.cdk-overlay-pane.cdk-overlay-pane {
+  max-height: 70vh;
+}
+
+.mat-dialog-container.mat-dialog-container {
+  position: relative;
+  border-radius: 0;
+}
+
+.mat-form-field-infix.mat-form-field-infix {
+  border-top: none;
+}
+
+.mat-form-field-outline.mat-form-field-outline {
+  box-shadow: 0 2px 4px rgba(black, .2);
+  border-radius: 5px;
+}
+
+.mat-form-field-appearance-outline.mat-form-field-appearance-outline .mat-form-field-outline {
+  top: 0;
+  color: #C4C4C4;
+}
+
+.mat-form-field-appearance-outline.mat-form-field-appearance-outline .mat-form-field-flex {
+  padding: 0 1rem;
+}
+
+.mat-form-field-appearance-outline {
+  &.mat-form-field-appearance-outline .mat-form-field-outline-thick .mat-form-field-outline-start,
+  &.mat-form-field-appearance-outline .mat-form-field-outline-thick .mat-form-field-outline-end,
+  &.mat-form-field-appearance-outline .mat-form-field-outline-thick .mat-form-field-outline-gap {
+    border-width: 1px;
+  }
+}
+
+.mat-form-field-appearance-outline .mat-select-arrow-wrapper.mat-select-arrow-wrapper {
+  transform: none;
+}
+
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  height: auto;
+}
+
+button {
+  &.mat-raised-button {
+    padding: 12px 1.5rem;
+    line-height: 1.5rem;
+
+    .mat-button-wrapper,
+    .mat-button-wrapper span {
+      display: inline-block;
+      line-height: 1;
+    }
+
+    mat-icon:last-child {
+      margin-left: 12px;
+    }
+
+    mat-icon:first-child {
+      margin-right: 12px;
+    }
+  }
+
+  &.mat-menu-item {
+    span {
+      display: inline-block;
+      line-height: 1;
+      vertical-align: middle;
+    }
+  }
+}
+
+.is-hidden {
+  display: none;
+}
+
+.visually-hidden {
+  opacity: 0;
+  height: 0;
+  width: 0 !important;
+}
