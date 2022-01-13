@@ -50,6 +50,8 @@ build/
 dist/
 node_modules/
 aws-exports.js
+.env
+enviroment.ts
 awsconfiguration.json
 amplifyconfiguration.json
 amplifyconfiguration.dart

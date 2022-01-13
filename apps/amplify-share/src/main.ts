@@ -9,7 +9,7 @@ if (environment.production) {
   enableProdMode();
 }
 
-Amplify.configure(environment.amplify);
+Amplify.configure(JSON.parse(environment.amplify));
 
 platformBrowserDynamic()
   .bootstrapModule(AppModule)
