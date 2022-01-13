@@ -9,6 +9,7 @@ mutation CreateTodo(
     description
     createdAt
     updatedAt
+    owner
   }
 }
 mutation UpdateTodo(
@@ -21,6 +22,7 @@ mutation UpdateTodo(
     description
     createdAt
     updatedAt
+    owner
   }
 }
 mutation DeleteTodo(
@@ -33,5 +35,6 @@ mutation DeleteTodo(
     description
     createdAt
     updatedAt
+    owner
   }
 }

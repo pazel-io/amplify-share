@@ -4,10 +4,13 @@
   padding: 40px;
 }
 
-amplify-s3-album {
-  display: block;
+amplify-s3-image {
+  --height: 100px;
+  --width: 100px;
+  width: 100px;
 }
 
-amplify-s3-album::part(div) {
-  background-color: red;
+amplify-s3-album::shadow(*) {
+  --height: 100px;
+  --width: 100px;
 }
