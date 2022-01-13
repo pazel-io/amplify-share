@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LegacyAmplifyUiModule } from '@aws-amplify/ui-angular/legacy';
+import { FileUploadModule } from '../file-upload/file-upload.module';
 import { LoginComponent } from './login.component';
 import { LoginRoutingModule } from './login-routing.module';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -27,6 +28,7 @@ import { AmplifyAuthenticatorModule } from '@aws-amplify/ui-angular';
     FormsModule,
     AmplifyAuthenticatorModule,
     LegacyAmplifyUiModule,
+    FileUploadModule,
   ]
 })
 export class LoginModule { }

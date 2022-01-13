@@ -1,8 +1,9 @@
 <amplify-authenticator class="login-page">
   <ng-template amplifySlot="authenticated" let-user="user" let-signOut="signOut">
     <div style="color: #C4C4C4">
-      <h1>Welcome {{ user.username }}!</h1>
+      <h1>Welcome {{ user.signInUserSession.idToken.payload.email }}!</h1>
       <amplify-button (click)="signOut()">Sign Out</amplify-button>
     </div>
+    <amplify-share-file-upload></amplify-share-file-upload>
   </ng-template>
 </amplify-authenticator>
