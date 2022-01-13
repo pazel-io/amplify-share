@@ -3,3 +3,11 @@
   background-color: #eaeaea;
   padding: 40px;
 }
+
+amplify-s3-album {
+  display: block;
+}
+
+amplify-s3-album::part(div) {
+  background-color: red;
+}

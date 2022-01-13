@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LegacyAmplifyUiModule } from '@aws-amplify/ui-angular/legacy';
 import { FileShareModule } from '../file-upload/file-share.module';
+import { GraphqlShareModule } from '../graphql-share/graphql-share.module';
 import { DashboardComponent } from './dashboard.component';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -29,6 +30,7 @@ import { AmplifyAuthenticatorModule } from '@aws-amplify/ui-angular';
     AmplifyAuthenticatorModule,
     LegacyAmplifyUiModule,
     FileShareModule,
+    GraphqlShareModule,
   ]
 })
 export class DashboardModule { }
