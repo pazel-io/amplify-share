@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LegacyAmplifyUiModule } from '@aws-amplify/ui-angular/legacy';
-import { FileUploadModule } from '../file-upload/file-upload.module';
-import { LoginComponent } from './login.component';
-import { LoginRoutingModule } from './login-routing.module';
+import { FileShareModule } from '../file-upload/file-share.module';
+import { DashboardComponent } from './dashboard.component';
+import { DashboardRoutingModule } from './dashboard-routing.module';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
@@ -14,12 +14,12 @@ import { AmplifyAuthenticatorModule } from '@aws-amplify/ui-angular';
 
 @NgModule({
   declarations: [
-    LoginComponent
+    DashboardComponent
   ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    LoginRoutingModule,
+    DashboardRoutingModule,
     MatTabsModule,
     MatInputModule,
     MatButtonModule,
@@ -28,7 +28,7 @@ import { AmplifyAuthenticatorModule } from '@aws-amplify/ui-angular';
     FormsModule,
     AmplifyAuthenticatorModule,
     LegacyAmplifyUiModule,
-    FileUploadModule,
+    FileShareModule,
   ]
 })
-export class LoginModule { }
+export class DashboardModule { }

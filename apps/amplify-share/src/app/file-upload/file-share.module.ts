@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LegacyAmplifyUiModule } from '@aws-amplify/ui-angular/legacy';
-import { FileUploadComponent } from './file-upload.component';
+import { FileShareComponent } from './file-share.component';
 
 @NgModule({
   declarations: [
-    FileUploadComponent
+    FileShareComponent
   ],
   imports: [
     CommonModule,
@@ -14,7 +14,7 @@ import { FileUploadComponent } from './file-upload.component';
     LegacyAmplifyUiModule,
   ],
   exports: [
-    FileUploadComponent,
+    FileShareComponent,
   ]
 })
-export class FileUploadModule { }
+export class FileShareModule { }
