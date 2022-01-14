@@ -7,8 +7,12 @@
   <mat-list-item *ngFor="let todo of todos" role="listitem">
     <div mat-line>{{todo.name}}</div>
     <div mat-line> {{todo.updatedAt | date: 'medium'}} </div>
-    <div mat-line> {{todo.description}} </div>
-    <button mat-icon-button color="primary" (click)="removeTodo(todo.id)">
+    <div mat-line>
+      {{todo.description}}
+      <span mat-line *ngIf="todo.owner"> owner </span>
+      <span mat-line *ngIf="!todo.owner"> public </span>
+    </div>
+    <button mat-icon-button *ngIf="todo.owner" color="primary" (click)="removeTodo(todo.id)">
       <mat-icon>delete</mat-icon>
     </button>
   </mat-list-item>
