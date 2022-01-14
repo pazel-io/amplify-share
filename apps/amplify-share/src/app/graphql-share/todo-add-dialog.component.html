@@ -1,0 +1,10 @@
+<h1 mat-dialog-title>Add a new todo</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <input matInput type="text" [(ngModel)]="value" placeholder="Enter your todo" (keyup.enter)="submit()">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-flat-button color="primary" [disabled]="!value" (click)="submit()">Submit</button>
+  <button mat-button mat-dialog-close>Cancel</button>
+</div>

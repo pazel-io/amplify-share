@@ -12,10 +12,13 @@
       "AmplifyAppId": "d2iowuije291mo"
     },
     "categories": {
-      "hosting": {
-        "amplifyhosting": {
-          "appId": "d2iowuije291mo",
-          "type": "cicd"
+      "auth": {
+        "amplifysharead640c5f": {}
+      },
+      "function": {
+        "S3Trigger5eb2813b": {
+          "deploymentBucketName": "amplify-amplifyshare-dev-140854-deployment",
+          "s3Key": "amplify-builds/S3Trigger5eb2813b-4f586347545848703176-build.zip"
         }
       }
     }

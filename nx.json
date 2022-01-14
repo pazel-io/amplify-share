@@ -20,7 +20,8 @@
           "test",
           "e2e"
         ],
-        "accessToken": "ZjEzNDMzY2QtZDE0MC00MGJkLWIyNWMtNDBiZjgwZWI4MzNmfHJlYWQtd3JpdGU="
+        "accessToken": "ZjEzNDMzY2QtZDE0MC00MGJkLWIyNWMtNDBiZjgwZWI4MzNmfHJlYWQtd3JpdGU=",
+        "parallel": 1
       }
     }
   },
@@ -32,15 +33,36 @@
       }
     ]
   },
-  "projects": {
-    "amplify-share": {
-      "tags": []
+  "cli": {
+    "defaultCollection": "@nrwl/angular",
+    "packageManager": "npm"
+  },
+  "defaultProject": "amplify-share",
+  "generators": {
+    "@nrwl/angular": {
+      "application": {
+        "linter": "eslint"
+      },
+      "library": {
+        "linter": "eslint"
+      },
+      "storybook-configuration": {
+        "linter": "eslint"
+      }
     },
-    "amplify-share-e2e": {
-      "tags": [],
-      "implicitDependencies": [
-        "amplify-share"
-      ]
+    "@nrwl/angular:application": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
+    },
+    "@nrwl/angular:library": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "jest"
+    },
+    "@nrwl/angular:component": {
+      "style": "scss"
     }
   }
 }

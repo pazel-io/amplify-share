@@ -1,16 +1,4 @@
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
-
 export const environment = {
-  production: false,
+  amplify: '{"aws_project_region":"ap-southeast-2","aws_appsync_graphqlEndpoint":"https://6o2frvbtsnaqhghdzkyhgmhoty.appsync-api.ap-southeast-2.amazonaws.com/graphql","aws_appsync_region":"ap-southeast-2","aws_appsync_authenticationType":"AMAZON_COGNITO_USER_POOLS","aws_cognito_identity_pool_id":"ap-southeast-2:98e00859-a6a1-4483-b92f-aba34cea50f9","aws_cognito_region":"ap-southeast-2","aws_user_pools_id":"ap-southeast-2_7Uesmd8e6","aws_user_pools_web_client_id":"51t6f4naemhssfrhcdie2ohn2h","oauth":{},"aws_cognito_username_attributes":["EMAIL"],"aws_cognito_social_providers":[],"aws_cognito_signup_attributes":["EMAIL"],"aws_cognito_mfa_configuration":"OFF","aws_cognito_mfa_types":["SMS"],"aws_cognito_password_protection_settings":{"passwordPolicyMinLength":8,"passwordPolicyCharacters":[]},"aws_cognito_verification_mechanisms":["EMAIL"],"aws_user_files_s3_bucket":"amplifysharernd140854-dev","aws_user_files_s3_bucket_region":"ap-southeast-2"}',
+  production: true,
 };
-
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/plugins/zone-error';  // Included with Angular CLI.

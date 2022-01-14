@@ -6,6 +6,7 @@ query GetTodo($id: ID!) {
     description
     createdAt
     updatedAt
+    owner
   }
 }
 query ListTodos(
@@ -20,6 +21,7 @@ query ListTodos(
       description
       createdAt
       updatedAt
+      owner
     }
     nextToken
   }
