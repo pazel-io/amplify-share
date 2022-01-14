@@ -32,10 +32,10 @@ export class GraphqlShareComponent implements OnInit {
   async ngOnInit() {
     this.todos = (await this.api.ListTodos()).items;
     this.user = await Auth.currentUserInfo();
-    this.api.OnCreateTodoListener().subscribe((value) => {
+    this.api.OnCreateTodoListener(this.user.username).subscribe((value) => {
       this.todos.push(value.value.data?.onCreateTodo);
     });
-    this.api.OnDeleteTodoListener().subscribe((value) => {
+    this.api.OnDeleteTodoListener(this.user.username).subscribe((value) => {
       const index = this.todos.findIndex(todo => todo.id === value.value.data?.onDeleteTodo.id);
       this.todos.splice(index, 1);
     });
